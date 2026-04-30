@@ -918,7 +918,7 @@ const MajorGlyph = ({ kind, size = 28 }) => {
 const PlaceholderImage = ({ label = 'PRODUCT SHOT', tall = false, productId = null }) => {
   const h = tall ? 380 : 170;
   const [errored, setErrored] = React.useState(false);
-  const src = productId ? `images/${productId}.png` : null;
+  const src = productId ? `/images/${productId}.png` : null;
   const showImg = src && !errored;
   return (
     <div style={{
